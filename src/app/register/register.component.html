@@ -1,0 +1,68 @@
+
+<!-- 
+<div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> User Registered!
+    <button   type="button" (click)="closeAlert()" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+ <div>  -->
+ 
+    <div *ngIf="!showLogin" class="register">
+
+        <h2>Register</h2>
+<form   [formGroup]="register" (ngSubmit)="registerUser()" >
+
+    <div class="form-group">
+        
+        <input type="text" class="form-control" placeholder="Enter Name" formControlName="name">
+      </div>
+
+      <div class="form-group">
+        
+        <input type="email" email ngModelclass="form-control" placeholder="Enter Email" formControlName="email">
+      </div>
+          
+      <div class="form-group">
+         
+        <input type="password" class="form-control" placeholder="Enter Password" formControlName="password">
+      </div>
+    <button  [disabled]="able" type="submit" class="btn btn-primary">Register</button>
+    <br>
+    <p><a (click)="openLogin()">Already have account, Click to Login!</a></p>
+  </form> 
+
+</div >
+
+
+    <div *ngIf="showLogin" class="register">
+
+  <h2>Login</h2>
+<span style="color: red ;background-color: bisque; ">{{isError}}</span>
+  <!-- <div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> User Registered!
+    <button   type="button" (click)="closeAlert()" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+
+<form [formGroup]="login" (ngSubmit)="loginUser()" >
+
+      <div class="form-group">
+       
+        <input type="email" email ngModel class="form-control" placeholder="Enter Email" formControlName="email">
+      </div>
+          
+      <div class="form-group">
+         
+        <input type="password" class="form-control" placeholder="Enter Password" formControlName="password">
+      </div>
+
+     
+    
+    <button type="submit" class="btn btn-primary">Login</button>
+    <br>
+  <p> <a (click)="closeLogin()">New User, Click to Register!</a></p> 
+  </form> 
+</div>
+

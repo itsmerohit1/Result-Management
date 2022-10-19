@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+  
+
+.home{
+
+color:red;
+background-color: rgb(199, 184, 130);
+z-index: 0;
+padding-bottom: 20px;
+padding-top: 10px;
+margin-top: 40px;
+min-width: 300px;
+width: 30%;
+text-align: center;
+margin-left: 35%;
+margin-right: 35%;
+border-radius: 10px;
+}
+
+button{
+  margin: 10px;
+  background-color: rgb(104, 210, 184);
+  border-radius: 5px;
+}

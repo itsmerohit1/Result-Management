@@ -1,0 +1,41 @@
+
+    
+    <div class="result" *ngIf="resultexist!=1">
+<h1 style="text-align:center">View Your Results!</h1>
+
+<form [formGroup]="result" (ngSubmit)="GetResult()"> 
+
+<div class="form-group">
+    <input type="text" placeholder="Enter Name" formControlName="name" >
+</div>
+<br>
+
+<div class="form-group">
+    <input type="text" placeholder=" Enter Roll No" formControlName="rollNo">
+</div>
+<br>
+<button type="submit">Search !</button>
+<button (click)="clearForm()">Clear</button>
+
+</form>
+</div>
+
+
+<div  *ngIf="resultexist==1" class="result1" >
+  <button (click)="GoResult()" style="background-color: rgb(227, 77, 77)"><a routerLink="result">Back</a></button> 
+    <h2> Your Result </h2>
+    <h5>Name : {{Student_result.name}}</h5>
+    <h5>Roll No:{{Student_result.rollNo}}</h5>
+    <h5>Date of Birth:{{Student_result.dob}}</h5>
+    <h5>Score: {{Student_result.score}}</h5>
+    
+</div>
+
+
+<div class="result2" *ngIf="resultexist==-1" >
+    <h4>Wrong/Empty Credentials !</h4>
+    
+</div>
+
+
+

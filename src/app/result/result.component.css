@@ -1,0 +1,93 @@
+.result{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 30px;
+   width: 400px;
+   margin: auto;
+   height: 300px;
+   text-align: center;
+   height: 300px;
+    
+    background-color: rgb(215, 168, 108);
+    border-radius: 15px;
+    margin-top: -140px;
+    
+}
+
+label{
+    color: blue;
+    font-size:20px ;
+}
+button{
+    color: rgb(233, 239, 238);
+    background-color: rgb(39, 148, 112);
+    font-size: medium;
+    border-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input{
+   
+    
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgba(157, 125, 215, 0.8);
+  box-shadow: 10px red;
+}
+
+input::placeholder{
+    text-align: center;
+   color: azure;
+    
+}
+
+.result1{
+    
+    padding: 30px;
+   width: 400px;
+   margin: auto;
+   margin-top: -140px;
+    position: relative;
+    z-index: 3;
+    background-color:rgb(86, 86, 241);
+    padding: 10px;
+    border-radius: 10px;
+    padding: 30px;
+   width: 400px;
+   
+   height: 300px;
+   text-align: center;
+
+}
+.result1 h5{
+  background-color: azure;
+  border-radius: 4px;
+  width: 80%;
+  margin: 10px;
+  margin-left: 35px;
+  padding: 10px;
+}
+
+
+.result2{
+    z-index: 4;
+    position: relative;
+     width:300px;
+     margin: auto;
+     margin-top: -140px;
+     background-color: azure;
+     color: red;
+     border-radius: 10px;
+     text-align: center;
+}
+.result2 h5{
+   
+}

@@ -1,0 +1,43 @@
+.add{
+    position: relative;
+     z-index: 1;
+    text-align: center;
+   padding: 30px;
+   width: 400px;
+   margin: auto;
+    
+    background-color: rgb(215, 168, 108);
+    border-radius: 15px;
+    margin-top: -140px;
+    
+}
+
+label{
+    color: blue;
+    font-size:20px ;
+}
+button{
+    color: rgb(233, 239, 238);
+    background-color: rgb(39, 148, 112);
+    font-size: medium;
+    border-color: aquamarine;
+    
+}
+
+input{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(157, 125, 215, 0.8);
+  box-shadow: 10px red;
+}
+
+input::placeholder{
+    text-align: center;
+   color: azure;
+    
+}

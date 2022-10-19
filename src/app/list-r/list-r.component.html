@@ -1,0 +1,44 @@
+ <div  class="listr">
+ 
+ <h3>Student Records!</h3>
+
+ <button   (click)="goToAdd()">Add Records</button>
+
+<table style="min-width: 100%;">
+
+    <tr >
+        <td>
+            Roll No
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Date of Birth
+        </td>
+        <td>
+            Score
+        </td>
+         <td>
+            Delete
+         </td>
+         <td>
+            Edit
+         </td>
+    </tr>
+ 
+    <tr *ngFor="let x of collection" style="color:blue">
+        <td> {{x.rollNo}}</td>
+        <td> {{x.name}}</td>
+        <td> {{x.dob}}</td>
+        <td> {{x.score}}</td>
+        <td> <i (click)="deleteResto(x.id)" class="fa fa-trash" style="font-size:20px; color: red;"></i></td>
+        <td> <a routerLink="/update/{{x.id}}">
+            <i class="fa fa-edit" style="font-size:20px; color: red;">
+            </i>
+        </a>
+        </td>
+    </tr>
+</table>
+</div>
+    

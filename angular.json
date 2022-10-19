@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "restuarent": {
+    "resultApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/restuarent",
+            "outputPath": "dist/resultApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "restuarent:build:production"
+              "browserTarget": "resultApp:build:production"
             },
             "development": {
-              "browserTarget": "restuarent:build:development"
+              "browserTarget": "resultApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "restuarent:build"
+            "browserTarget": "resultApp:build"
           }
         },
         "test": {
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a5522795-a4e7-4058-82e4-0061e5947371"
   }
 }
