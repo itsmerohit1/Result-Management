@@ -1,5 +1,9 @@
 # resultApp
 
+A Web App where teacher can register and login with their credentials and students can see their result by entering required items.
+
+Fronted : Angular , Backend : Json-server 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
 ## Development server
