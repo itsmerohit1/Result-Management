@@ -1,6 +1,6 @@
 # resultApp
 
-A Web App where teacher can register and login with their credentials and students can see their result by entering required items.
+A  Web App where teacher can register and login with their credentials and students can see their result by entering required items.
 
 Fronted : Angular , Backend : Json-server 
 
